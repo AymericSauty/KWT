@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>{% block title %}KWT{% endblock %}</title>
+
+        {% block stylesheets %}
+            <script src ="{{ asset ('bundles/kwt/js/jquery-3.2.1.min.js') }}"></script>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href ="{{ asset ('bundles/kwt/css/bootstrap.min.css') }}" type ="text/css" />
+            <!-- Optional theme -->
+            <link rel="stylesheet" href ="{{ asset ('bundles/kwt/css/bootstrap-theme.min.css') }}" type ="text/css" />
+            <!-- Latest compiled and minified JavaScript -->
+            <script type="text/javascript" src="{{ asset ('bundles/kwt/js/bootstrap.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset ('bundles/kwt/js/main.js') }}"></script>
+            <script type="text/javascript" src="{{ asset ('bundles/kwt/js/jquery.paginate.js') }}"></script>
+            <link rel="stylesheet" href ="{{ asset ('bundles/kwt/css/main.css') }}" type ="text/css" />
+            <link rel="stylesheet" href ="{{ asset ('bundles/kwt/css/jquery.paginate.css') }}" type ="text/css" />
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+
+        {% block javascripts %}
+        {% endblock %}
+    </body>
+</html>

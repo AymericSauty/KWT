@@ -1,0 +1,4 @@
+kwt:
+    resource: "@KWTBundle/Controller/"
+    type:     annotation
+    prefix:   /
