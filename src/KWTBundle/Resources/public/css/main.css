@@ -90,6 +90,9 @@ body{
 .presentation{
     text-align: center;
     color: white;
+    border-bottom: black;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
 }
 
 
@@ -106,10 +109,18 @@ body{
 
 .thumbnail{
     text-align: center;
+    background-color: #383838;
+    border: 1px solid #000;
 }
 
-.col-md-4{
-
+.thumbnail .caption{
+    color: white;
+}
+.thumbnail:hover {
+    border: solid 1px #0070d0;
+    -moz-box-shadow: 1px 1px 5px #0070d0;
+    -webkit-box-shadow: 1px 1px 5px #0070d0;
+    box-shadow: 1px 1px 5px #0070d0;
 }
 
 /*********** FOOTER **********/
