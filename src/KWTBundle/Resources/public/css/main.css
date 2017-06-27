@@ -1,3 +1,8 @@
+body{
+    background-color: rgba(12, 12, 12, 0.95);
+}
+
+
 /*********** NAVBAR ************/
 /*******************************/
 
@@ -59,10 +64,20 @@
 
 #mainCarousel{
     width: 100%;
-    height: 150px;
+    height: auto;
     padding: 0;
 }
 
 #mainCarousel img{
     width: 100%;
+}
+
+
+
+/*********** PRESENTATION ************/
+/*************************************/
+
+.presentation{
+    text-align: center;
+    color: white;
 }
