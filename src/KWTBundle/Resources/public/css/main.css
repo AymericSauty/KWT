@@ -11,7 +11,7 @@ body{
 .container-fluid{
     background-color: rgba(56, 56, 56, 1);
     border-bottom: black;
-    border-width: 0px 0px 2px 0px;
+    border-width: 0px 0px 1px 0px;
     border-style: solid;
 }
 
@@ -68,7 +68,7 @@ body{
 #myCarousel{
     width: 100%;
     border-bottom: black;
-    border-width: 0px 0px 2px 0px;
+    border-width: 0px 0px 1px 0px;
     border-style: solid;
 }
 
@@ -91,12 +91,20 @@ body{
 
 
 .presentation{
-    text-align: center;
     color: white;
     border-bottom: black;
-    border-width: 0px 0px 2px 0px;
+    border-width: 0px 0px 1px 0px;
     border-style: solid;
     background-color: rgb(29, 29, 29);
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.panel-body{
+    background-color: rgb(37, 37, 37);
 }
 
 
@@ -105,10 +113,17 @@ body{
 
 .selectAccueil{
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: rgb(19, 19, 19);
+    background-image:url(../images/perchoir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    border-bottom: black;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
 }
 
 .thumbnail{
@@ -268,6 +283,7 @@ html, body {
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
 
 #contentWrapper {
   display: block;
