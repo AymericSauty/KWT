@@ -217,10 +217,66 @@ body{
     height: 250px;
     width: 250px;
 }
+#crestDruid{
+    background: url(../images/crest/druid_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestHunter{
+    background: url(../images/crest/hunter_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestMage{
+    background: url(../images/crest/mage_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestMonk{
+    background: url(../images/crest/monk_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestPala{
+    background: url(../images/crest/paladin_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestPriest{
+    background: url(../images/crest/priest_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestRogue{
+    background: url(../images/crest/rogue_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestCham{
+    background: url(../images/crest/shaman_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestWarlock{
+    background: url(../images/crest/warlock_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestWar{
+    background: url(../images/crest/warrior_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
 
 
+.tableMembre{
+  width: 100%;
+  text-align: center;
+}
 
-
+ul.megaliste {
+    list-style-type:none;
+}
 
 
 
