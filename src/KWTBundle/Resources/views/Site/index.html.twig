@@ -1,61 +1,137 @@
 {% extends "::layout.html.twig" %}
 {% block body %}
-	<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+        
+        <section class="diaporama">
+          <div class="container" id="mainCarousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              </ol>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-	<h3>Gestion de guilde</h3>
-  <hr>
-  =======
-  Gestion OK
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="{{ asset('bundles/kwt/images/caroussel1.jpg') }}" alt="Los Angeles">
+                </div>
+              </div>
 
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="presentation">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+
+                <div class="page-header">
+                  <h1>Kana Weed Team <small>Présentation de la guilde</small></h1>
+                </div>
+
+                <p>La guilde <b><u>KWT</u></b> est présente sur le serveur : <b>Hyjal</b><br><br>
+                L'objectif principal de la guilde actuellement est de créer un groupe capable de partir en groupe de Raid Héroique solide avant d'atteindre le Mythique du même palier.<br>
+         
+                Nous souhaitons évoluer dans une bonne ambiance, et sans prise de tête. Nous recherchons des personnes matures qui sont prêtes à s'investir pour l'avancée de la guilde.<br><br>
+
+                Notre guilde possède une ambiance très familliale. Pour la petite histoire, il y a 5 gérants dans cette guilde, gérants qui se connaissent IRL depuis plusieurs années. Autant vous dire qu'on rigole bien sur le TS !<br><br>
+                
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Les soirs de raid :</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                      <li>Lundi de 21h à 23h30 (Pour finir nos ID en cours)</li>
+                      <li>Mercredi de 21h à minuit</li>
+                      <li>Dimanche de 21h à minuit</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Pour des informations complémentaires vous pouvez contacter en jeu l'un des membres suivant :</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                      <li>Faelanor-Hyjal (GM - RL)</li>
+                      <li>Diox-Hyjal (GM)</li>
+                      <li>Xmuushu-Hyjal (GM)</li>
+                      <li>Fantoum-Hyjal (GM)</li>
+                      <li>Kazarosh-Hyjal (GM)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                Vous pouvez aussi nous laisser votre candidature sur le site, l'une des personnes citées ci-dessus vous contactera en jeu.<br><br>
+                 
+                Bonne visite sur notre site.
+              </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="selectAccueil">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-xs-6">
+                <a href="#">
+                <div class="thumbnail">
+                  <img src="{{ asset('bundles/kwt/images/logoKWT.png') }}" alt="Roster">
+                  <div class="caption">
+                    <h3>Membres</h3>
+                  </div>
+                </div>
+                </a>  
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="thumbnail">
+                  <img src="{{ asset('bundles/kwt/images/logo.png') }}" alt="Progress">
+                  <div class="caption">
+                    <h3>Progress</h3>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="thumbnail">
+                  <img src="{{ asset('bundles/kwt/images/logo.png') }}" alt="Recrutement">
+                  <div class="caption">
+                    <h3>Recrutement</h3>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="thumbnail">
+                  <img src="{{ asset('bundles/kwt/images/logo.png') }}" alt="Forum">
+                  <div class="caption">
+                    <h3>Forum</h3>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="footer">
+          <div class="container">
+            <div class="row">
+              <div id="rank" class="col-md-6 col-xs-12">
+                <a href=https://www.wowprogress.com/guild/eu/hyjal/KWT><img alt='WoW Guild Rankings' src='https://wowprogress.com/guild_img/1396862/out/type.forum/guild_rank.realm/ach_rank.realm' border='0'/></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
 {% endblock %}
