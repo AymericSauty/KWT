@@ -296,11 +296,21 @@ html, body {
   height: 100%;
 }
 
-
-
 .full-page {
   left: 0 !important;
   width: 100% !important;
+}
+
+.list-item:hover {
+  background-color: grey;
+}
+
+.list-item-active{
+    background-color: #1d1d1d;
+}
+
+.list-item-active:hover{
+    background-color: #1d1d1d;
 }
 
 .list-item-active:after {
@@ -308,7 +318,6 @@ html, body {
   position: absolute;
   margin-top: -65px; 
   margin-left: 13.45em;
-  background-color: #1d1d1d;
   width: 0; 
   height: 0; 
   border-top: 33px solid transparent;
@@ -319,13 +328,5 @@ html, body {
   -moz-transition: all .20s ease;
   -o-transition: all .20s ease;
   transition: all .20s ease;
-}
-
-.list-item:hover {
-  background-color: grey;
-}
-
-.list-item:after {
-  background-color: #1d1d1d;
 }
 
