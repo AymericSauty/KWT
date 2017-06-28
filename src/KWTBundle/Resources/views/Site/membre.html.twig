@@ -21,6 +21,11 @@
 				        		<tr>
 				        			<td id="icoTank"></td>
 				        			<td><b>Tank</b></td>
+				        			{% for member in members %}
+				        			<div>
+				        				{{member['name']}}
+				        			</div>		
+									{% endfor %}
 				        		</tr>
 				        	</thead>
 				        </table>
@@ -35,22 +40,12 @@
 				        	</thead>
 				        </table>
 			        </div>
-			        <div class="col-sm-3 col-xs-6">
+			        <div class="col-sm-6 col-xs-12">
 				        <table>
 				        	<thead>
 				        		<tr>
 				        			<td id="icoDPS"></td>
-				        			<td><b>DPS Cac</b></td>
-				        		</tr>
-				        	</thead>
-				        </table>
-			        </div>
-			        <div class="col-sm-3 col-xs-6">
-				        <table>
-				        	<thead>
-				        		<tr>
-				        			<td id="icoDPS"></td>
-				        			<td><b>DPS Dist</b></td>
+				        			<td><b>DPS</b></td>
 				        		</tr>
 				        	</thead>
 				        </table>
