@@ -1,8 +1,74 @@
 {% extends "::layout.html.twig" %}
 {% block body %}
-	<section class="membre">
-		<div class="container" id="mainMembre">
-			<center>Ici c'est les membres</center>
-		</div>
-	</section>
+	<div class="pageMembre">
+		<section class="photoGuilde">
+			<div class="container" id="mainPhoto">
+				<center>Y aura une photo de guilde ici</center>
+			</div>
+		</section>
+
+		<section class="roster">
+			<div class="container" id="mainRoster">
+				<div class="row">
+		            <div class="col-sm-12">
+			            <div class="page-header">
+			              <h1>Notre Roster</h1>
+			            </div>
+			        </div>
+			        <div class="col-sm-3">
+				        <table>
+				        	<thead>
+				        		<tr>
+				        			<td id="icoTank"></td>
+				        			<td>Tank</td>
+				        		</tr>
+				        	</thead>
+				        </table>
+			        </div>
+			        <div class="col-sm-3">
+				        <table>
+				        	<thead>
+				        		<tr>
+				        			<td id="icoHeal"></td>
+				        			<td>Heal</td>
+				        		</tr>
+				        	</thead>
+				        </table>
+			        </div>
+			        <div class="col-sm-3">
+				        <table>
+				        	<thead>
+				        		<tr>
+				        			<td id="icoDPS"></td>
+				        			<td>DPS Cac</td>
+				        		</tr>
+				        	</thead>
+				        </table>
+			        </div>
+			        <div class="col-sm-3">
+				        <table>
+				        	<thead>
+				        		<tr>
+				        			<td id="icoDPS"></td>
+				        			<td>DPS Dist</td>
+				        		</tr>
+				        	</thead>
+				        </table>
+			        </div>
+			    </div>
+			</div>
+		</section>
+
+		<section class="membre">
+			<div class="container" id="mainMembre">
+				<div class="row">
+		            <div class="col-sm-12">
+			            <div class="page-header">
+			              <h1>Les Membres</h1>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</section>
+	</div>
 {% endblock %}

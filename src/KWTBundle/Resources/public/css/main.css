@@ -169,8 +169,39 @@ body{
 /*********** Membres **************/
 /**********************************/
 
-#mainMembre{
+.pageMembre{
+  background-color: rgb(29, 29, 29);
+}
+
+.photoGuilde{
   margin-top: 62px;
+}
+
+.roster{
+  color: white;
+}
+
+#icoTank{
+    background: url(../images/icones/icoTank.png) 0 0 !important;
+    height: 75px;
+    width: 75px;
+}
+
+#icoHeal{
+    background: url(../images/icones/icoHeal.png) 0 0 !important;
+    height: 75px;
+    width: 75px;
+}
+
+#icoDPS{
+    background: url(../images/icones/icoDPS.png) 0 0 !important;
+    height: 75px;
+    width: 75px;
+}    
+
+
+.membre{
+  color: white;
 }
 
 
