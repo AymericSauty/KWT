@@ -7,6 +7,7 @@
 
         {% block stylesheets %}
             <script src ="{{ asset ('bundles/kwt/js/jquery-3.2.1.min.js') }}"></script>
+            <script src ="{{ asset ('bundles/kwt/js/index.js') }}"></script>
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href ="{{ asset ('bundles/kwt/css/bootstrap.min.css') }}" type ="text/css" />
             <!-- Optional theme -->
@@ -17,17 +18,44 @@
             <script type="text/javascript" src="{{ asset ('bundles/kwt/js/jquery.paginate.js') }}"></script>
             <link rel="stylesheet" href ="{{ asset ('bundles/kwt/css/main.css') }}" type ="text/css" />
             <link rel="stylesheet" href ="{{ asset ('bundles/kwt/css/jquery.paginate.css') }}" type ="text/css" />
+
         {% endblock %}
 
         <link rel="icon" type="image/x-icon" href="{{ asset('bundles/kwt/images/favicon.png') }}" />
 
-
     </head>
     <body>
+
+    <!-- Le wrapper, c'est un jambon dans un sandwich, mais le jambon c'est le "Content" -->
+    <div id="wrapper">
+      <!-- Ca, c'est le pain de gauche -->
+      <div id="leftWrapper">
+        <div id="listView" class="list">
+          <li class="list-item-active"><a href="#">Accueil</a></li>
+          <li class="list-item"><a href="#">Membres</a></li>
+          <li class="list-item"><a href="#">Progress</a></li>
+          <li class="list-item"><a href="#">Recrutement</a></li>
+          <li class="list-item"><a href="#">Teamspeak</a></li>
+          <li class="list-item"><a href="#">Forum</a></li>
+        </div>
+      </div>
+
+      <!-- Et la, le pain de gauche -->
+      <div id="rightWrapper" class="full-page">
+        <div id="header" class="full-page"><a id="fullPage" href="#">|||</a></div>
+          <div id="contentWrapper">
+
         {% block body %}
         {% endblock %}
 
         {% block javascripts %}
         {% endblock %}
+
+
+        </div>
+      </div>
+    </div>
+
+        
     </body>
 </html>
