@@ -199,7 +199,6 @@ body{
     width: 75px;
 }    
 
-
 .membre{
   color: white;
 }
@@ -207,9 +206,17 @@ body{
 
 
 
+#crestDK{
+    background: url(../images/crest/death_knight_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
 
-
-
+#crestDH{
+    background: url(../images/crest/demon_hunter_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
 
 
 
