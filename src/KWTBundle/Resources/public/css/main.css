@@ -170,7 +170,9 @@ body{
 /**********************************/
 
 .pageMembre{
-  background-color: rgb(29, 29, 29);
+  background-image: url(../images/suramar.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .photoGuilde{
@@ -281,7 +283,12 @@ ul.megaliste {
 
 
 
-
+.pageMembre .container {
+    background-color: rgba(47, 47, 47, 0.93);
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+}
 
 
 
