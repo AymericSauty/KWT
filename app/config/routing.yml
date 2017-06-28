@@ -1,4 +1,3 @@
 kwt:
-    resource: "@KWTBundle/Controller/"
-    type:     annotation
+    resource: "@KWTBundle/Resources/config/routing.yml"
     prefix:   /

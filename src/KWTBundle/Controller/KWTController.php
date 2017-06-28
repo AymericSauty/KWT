@@ -7,11 +7,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class KWTController extends Controller
 {
-    /**
-     * @Route("/")
-     */
     public function indexAction()
     {
         return $this->render('KWTBundle:Site:index.html.twig');
+    }
+
+    public function membreAction()
+    {
+        return $this->render('KWTBundle:Site:membre.html.twig');
     }
 }
