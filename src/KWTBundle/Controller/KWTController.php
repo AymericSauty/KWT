@@ -30,7 +30,6 @@ class KWTController extends Controller
     		$characters[$i]['thumbnail'] = utf8_decode($members->character->thumbnail);
     		$i++;
     	}
-        var_dump($characters);
-        return $this->render('KWTBundle:Site:membre.html.twig',array ('data'=>$data));
+        return $this->render('KWTBundle:Site:membre.html.twig',array ('characters'=>$characters));
     }
 }
