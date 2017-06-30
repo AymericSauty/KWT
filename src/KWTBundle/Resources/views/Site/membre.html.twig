@@ -1,8 +1,205 @@
 {% extends "::layout.html.twig" %}
 {% block body %}
-	<section class="membre">
-		<div class="container" id="mainMembre">
-			<center>Ici c'est les membres</center>
-		</div>
-	</section>
+	<div class="pageMembre">
+		<section class="photoGuilde">
+			<div class="container" id="mainPhoto">
+				<center>Y aura une photo de guilde ici</center>
+			</div>
+		</section>
+
+		<section class="roster">
+			<div class="container" id="mainRoster">
+				<div class="row">
+		            <div class="col-sm-12">
+			            <div class="page-header">
+			              <h1>Notre Roster</h1>
+			            </div>
+			        </div>
+			        <div class="col-sm-3 col-xs-6">
+				        <table>
+				        	<thead>
+				        		<tr>
+				        			<td id="icoTank"></td>
+				        			<td><b>Tank</b></td>
+				        			{% for member in members %}
+				        			<div>
+				        				{{member['name']}}
+				        			</div>		
+									{% endfor %}
+				        		</tr>
+				        	</thead>
+				        </table>
+			        </div>
+			        <div class="col-sm-3 col-xs-6">
+				        <table>
+				        	<thead>
+				        		<tr>
+				        			<td id="icoHeal"></td>
+				        			<td><b>Heal</b></td>
+				        		</tr>
+				        	</thead>
+				        </table>
+			        </div>
+			        <div class="col-sm-6 col-xs-12">
+				        <table>
+				        	<thead>
+				        		<tr>
+				        			<td id="icoDPS"></td>
+				        			<td><b>DPS</b></td>
+				        		</tr>
+				        	</thead>
+				        </table>
+			        </div>
+			    </div>
+			</div>
+		</section>
+
+		<section class="membre">
+			<div class="container" id="mainMembre">
+				<div class="row">
+		            <div class="col-sm-12">
+			            <div class="page-header">
+			              <h1>Les Membres</h1>
+			            </div>
+			        </div>
+			    </div>
+
+
+
+	            <div class="col-sm-6">
+		            <table class="tableMembre">
+			        	<thead>
+			        		<tr>
+			        			<td id="crestDK"></td>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Chevaliers de la mort</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        		</tr>
+			        		<tr>
+			        			<td id="crestDruid"></td>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Druides</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        		</tr>
+			        		<tr>
+			        			<td id="crestMonk"></td>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Moines</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        		</tr>
+			        		<tr>
+			        			<td id="crestHunter"></td>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Chasseurs</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        		</tr>
+			        		<tr>
+			        			<td id="crestMage"></td>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Mages</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        		</tr>
+			        		<tr>
+			        			<td id="crestDH"></td>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Chasseurs de démons</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        		</tr>
+			        	</thead>
+			        </table>
+			    </div>
+			    <div class="col-sm-6">
+			        <table class="tableMembre">
+			        	<thead>
+			        		<tr>			        			
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Paladins</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        			<td id="crestPala"></td>
+			        		</tr>
+			        		<tr>			        			
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Prêtres</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        			<td id="crestPriest"></td>
+			        		</tr>
+			        		<tr>			        			
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Voleurs</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        			<td id="crestRogue"></td>
+			        		</tr>
+			        		<tr>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Chamans</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        			<td id="crestCham"></td>
+			        		</tr>
+			        		<tr>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Guerriers</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        			<td id="crestWar"></td>
+			        		</tr>
+			        		<tr>
+			        			<td>
+			        				<ul class="megaliste">
+			        					<li><b>Démonistes</b></li>
+			        					<li>Perso 1</li>
+		        						<li>Perso 2</li>
+			        				</ul>
+			        			</td>
+			        			<td id="crestWarlock"></td>
+			        		</tr>
+			        	</thead>
+			        </table>
+		        </div>
+			      
+			</div>
+		</section>
+	</div>
 {% endblock %}

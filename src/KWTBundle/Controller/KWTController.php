@@ -20,6 +20,7 @@ class KWTController extends Controller
         $url = "https://eu.api.battle.net/wow/guild/Hyjal/KWT?fields=members&locale=fr_FR&apikey=gdqbrkpkzk4sbrs7ku3h2gxqwrax22zg";
     	$raw = file_get_contents($url);
     	$response = json_decode($raw);
+
     	$i =0;
     	foreach ($response->members as $members) 
     	{

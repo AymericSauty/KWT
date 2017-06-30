@@ -169,26 +169,127 @@ body{
 /*********** Membres **************/
 /**********************************/
 
-#mainMembre{
+.pageMembre{
+  background-image: url(../images/suramar.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.photoGuilde{
   margin-top: 62px;
+  color: white;
+}
+
+.roster{
+  color: white;
+}
+
+#icoTank{
+    background: url(../images/icones/icoTank.png) 0 0 !important;
+    height: 75px;
+    width: 75px;
+}
+
+#icoHeal{
+    background: url(../images/icones/icoHeal.png) 0 0 !important;
+    height: 75px;
+    width: 75px;
+}
+
+#icoDPS{
+    background: url(../images/icones/icoDPS.png) 0 0 !important;
+    height: 75px;
+    width: 75px;
+}    
+
+.membre{
   color: white;
 }
 
 
 
 
+#crestDK{
+    background: url(../images/crest/death_knight_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+
+#crestDH{
+    background: url(../images/crest/demon_hunter_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestDruid{
+    background: url(../images/crest/druid_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestHunter{
+    background: url(../images/crest/hunter_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestMage{
+    background: url(../images/crest/mage_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestMonk{
+    background: url(../images/crest/monk_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestPala{
+    background: url(../images/crest/paladin_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestPriest{
+    background: url(../images/crest/priest_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestRogue{
+    background: url(../images/crest/rogue_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestCham{
+    background: url(../images/crest/shaman_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestWarlock{
+    background: url(../images/crest/warlock_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+#crestWar{
+    background: url(../images/crest/warrior_crest.png) 0 0 !important;
+    height: 250px;
+    width: 250px;
+}
+
+
+.tableMembre{
+  width: 100%;
+  text-align: center;
+}
+
+ul.megaliste {
+    list-style-type:none;
+}
 
 
 
 
-
-
-
-
-
-
-
-
+.pageMembre .container {
+    background-color: rgba(47, 47, 47, 0.93);
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+}
 
 
 
