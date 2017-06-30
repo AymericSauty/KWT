@@ -11,11 +11,13 @@ class KWTController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('KWTBundle:Site:index.html.twig');
+    	$active = "Accueil";
+        return $this->render('KWTBundle:Site:index.html.twig',array ('active'=>$active));
     }
 
     public function membreAction()
     {
+    	$active = "Membres";
     	//Récupération de données via API Blizzard
         $url = "https://eu.api.battle.net/wow/guild/Hyjal/KWT?fields=members&locale=fr_FR&apikey=gdqbrkpkzk4sbrs7ku3h2gxqwrax22zg";
     	$raw = file_get_contents($url);
@@ -31,6 +33,6 @@ class KWTController extends Controller
     		$characters[$i]['thumbnail'] = $members->character->thumbnail;
     		$i++;
     	}
-        return $this->render('KWTBundle:Site:membre.html.twig',array ('characters'=>$characters));
+        return $this->render('KWTBundle:Site:membre.html.twig',array ('characters'=>$characters , 'active'=>$active));
     }
 }
