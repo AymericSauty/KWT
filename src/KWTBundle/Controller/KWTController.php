@@ -20,24 +20,17 @@ class KWTController extends Controller
         $url = "https://eu.api.battle.net/wow/guild/Hyjal/KWT?fields=members&locale=fr_FR&apikey=gdqbrkpkzk4sbrs7ku3h2gxqwrax22zg";
     	$raw = file_get_contents($url);
     	$response = json_decode($raw);
-    	// foreach ($response->members as $members) 
-    	// {
-    	// 	$name[] = utf8_decode($members->character->name);
-    	// 	$classe[] = utf8_decode($members->character->class);
-    	// 	$role[] = utf8_decode($members->character->spec->role);
-    	// 	$thumbnail[] = utf8_decode($members->character->thumbnail);
-    	// }
+    	$i =0;
     	foreach ($response->members as $members) 
-        {
-            $tab = array(
-                           array('name'=> $members->character->name,
-                                 'classe'=> $members->character->class),
-                                 'role'=> $members->character->spec->role,
-                                 'thumbnail'=> $members->character->thumbnail
-
-                        	));
-        }
-        var_dump($tab);
-        return $this->render('KWTBundle:Site:membre.html.twig');
+    	{
+    		$characters[$i]['name'] = utf8_decode($members->character->name);
+    		$characters[$i]['classe'] = utf8_decode($members->character->class);
+    		$characters[$i]['role'] = utf8_decode($members->character->spec->role);
+    		$characters[$i]['rank'] = utf8_decode($members->rank);
+    		$characters[$i]['thumbnail'] = utf8_decode($members->character->thumbnail);
+    		$i++;
+    	}
+        var_dump($characters);
+        return $this->render('KWTBundle:Site:membre.html.twig',array ('data'=>$data));
     }
 }
