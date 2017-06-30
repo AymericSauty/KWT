@@ -24,11 +24,11 @@ class KWTController extends Controller
     	$i =0;
     	foreach ($response->members as $members) 
     	{
-    		$characters[$i]['name'] = utf8_decode($members->character->name);
-    		$characters[$i]['classe'] = utf8_decode($members->character->class);
-    		$characters[$i]['role'] = utf8_decode($members->character->spec->role);
-    		$characters[$i]['rank'] = utf8_decode($members->rank);
-    		$characters[$i]['thumbnail'] = utf8_decode($members->character->thumbnail);
+    		$characters[$i]['name'] = $members->character->name;
+    		$characters[$i]['classe'] = $members->character->class;
+    		$characters[$i]['role'] = $members->character->spec->role;
+    		$characters[$i]['rank'] = $members->rank;
+    		$characters[$i]['thumbnail'] = $members->character->thumbnail;
     		$i++;
     	}
         return $this->render('KWTBundle:Site:membre.html.twig',array ('characters'=>$characters));
