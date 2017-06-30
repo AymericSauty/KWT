@@ -25,7 +25,7 @@ class KWTController extends Controller
     	foreach ($response->members as $members) 
     	{
     		$characters[$i]['name'] = $members->character->name;
-    		$characters[$i]['classe'] = $members->character->class;
+    		$characters[$i]['class'] = $members->character->class;
     		$characters[$i]['role'] = $members->character->spec->role;
     		$characters[$i]['rank'] = $members->rank;
     		$characters[$i]['thumbnail'] = $members->character->thumbnail;
