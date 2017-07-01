@@ -51,22 +51,24 @@ class KWTController extends Controller
     		'thumbnail' => str_replace("avatar" , "main" , "https://render-eu.worldofwarcraft.com/character/".$response->thumbnail),
     		'ilvl' => $response->items->averageItemLevelEquipped,
     		);
-		$items = array(
+		$itemsGauche = array(
     		array ('name' => utf8_decode($response->items->head->name), 'id' => $response->items->head->id) ,
     		array ('name' => utf8_decode($response->items->neck->name), 'id' => $response->items->neck->id ),
     		array ('name' => utf8_decode($response->items->shoulder->name), 'id' => $response->items->shoulder->id ),
     		array ('name' => utf8_decode($response->items->back->name), 'id' => $response->items->back->id ),
     		array ('name' => utf8_decode($response->items->chest->name), 'id' => $response->items->chest->id ),
     		array ('name' => utf8_decode($response->items->wrist->name), 'id' => $response->items->wrist->id ),
-    		array ('name' => utf8_decode($response->items->hands->name), 'id' => $response->items->hands->id ),
-    		array ('name' => utf8_decode($response->items->waist->name), 'id' => $response->items->waist->id ),
-    		array ('name' => utf8_decode($response->items->legs->name), 'id' => $response->items->legs->id ),
-    		array ('name' => utf8_decode($response->items->feet->name), 'id' => $response->items->feet->id ),
-    		array ('name' => utf8_decode($response->items->finger1->name), 'id' => $response->items->finger1->id ),
-    		array ('name' => utf8_decode($response->items->finger2->name), 'id' => $response->items->finger2->id ),
-    		array ('name' => utf8_decode($response->items->trinket1->name), 'id' => $response->items->trinket1->id ),
-    		array ('name' => utf8_decode($response->items->trinket2->name), 'id' => $response->items->trinket2->id )
+            array ('name' => utf8_decode($response->items->hands->name), 'id' => $response->items->hands->id )
     		);
+        $itemsDroite = array(
+            array ('name' => utf8_decode($response->items->waist->name), 'id' => $response->items->waist->id ),
+            array ('name' => utf8_decode($response->items->legs->name), 'id' => $response->items->legs->id ),
+            array ('name' => utf8_decode($response->items->feet->name), 'id' => $response->items->feet->id ),
+            array ('name' => utf8_decode($response->items->finger1->name), 'id' => $response->items->finger1->id ),
+            array ('name' => utf8_decode($response->items->finger2->name), 'id' => $response->items->finger2->id ),
+            array ('name' => utf8_decode($response->items->trinket1->name), 'id' => $response->items->trinket1->id ),
+            array ('name' => utf8_decode($response->items->trinket2->name), 'id' => $response->items->trinket2->id )
+            );
 		$url = "https://eu.api.battle.net/wow/character/Hyjal/".$character."?fields=stats&locale=fr_FR&apikey=gdqbrkpkzk4sbrs7ku3h2gxqwrax22zg";
     	$raw = file_get_contents($url);
     	$response = json_decode($raw);
@@ -83,9 +85,12 @@ class KWTController extends Controller
     		);
 
     		//var_dump($description);
-        	//var_dump($items);
+        	//var_dump($itemsGauche);
         	//var_dump($stats);
-            return $this->render('KWTBundle:Site:character.html.twig',array ('active'=>$active, 'description'=>$description, 'items'=>$items, 'stats'=>$stats));
+            //var_dump($response);
+            return $this->render('KWTBundle:Site:character.html.twig',array ('active'=>$active, 'description'=>$description, 'itemsGauche'=>$itemsGauche, 'itemsDroite'=>$itemsDroite, 'stats'=>$stats));
     }
+
+
 
 }

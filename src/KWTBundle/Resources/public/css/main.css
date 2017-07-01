@@ -3,7 +3,6 @@ body{
     min-width: 480px;
 }
 
-
 /*********** NAVBAR ************/
 /*******************************/
 
@@ -20,52 +19,6 @@ body{
     border-style: solid;
 }
 
-.navbar{
-    margin-bottom: 0;
-    border: none;
-}
-#bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(255, 255, 255, 1);
-    border: none;
-}
-#bootstrap-menu.navbar-default {
-    font-size: 16px;
-    background-color: rgba(56, 56, 56, 1);
-    margin-bottom: 0;
-}
-#bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(0, 107, 230, 1);
-    background-color: rgba(56, 56, 56, 1);
-}
-#bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(0, 84, 186, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-#bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(0, 107, 230, 1);
-    background-color: rgba(0, 105, 204, 0.37);
-}
-#bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #0069cc;
-}
-#bootstrap-menu.navbar-default .navbar-toggle:hover,
-#bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #0069cc;
-}
-#bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #0069cc;
-}
-#bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #383838;
-}
-
-.navbar-brand, .navbar-nav>li>a {
-    text-shadow: none;
-}
 
 /*********** CAROUSSEL ************/
 /**********************************/
@@ -300,18 +253,8 @@ ul.megaliste {
 
 .pageCharacter{
   margin-top: 62px;
+  background-size: cover;
 }
-
-#mainPhoto{
-  padding: 0;
-}
-
-#mainPhoto img{
-  width: 100%;
-  margin-top: -250px;
-}
-
-
 
 
 
