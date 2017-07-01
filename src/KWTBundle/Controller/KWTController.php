@@ -82,10 +82,10 @@ class KWTController extends Controller
     		'versatility' => round($response->stats->versatilityDamageDoneBonus,1)
     		);
 
-		//var_dump($description);
-    	//var_dump($items);
-    	//var_dump($stats);
-        return $this->render('KWTBundle:Site:character.html.twig',array ('active'=>$active));
+    		//var_dump($description);
+        	//var_dump($items);
+        	//var_dump($stats);
+            return $this->render('KWTBundle:Site:character.html.twig',array ('active'=>$active, 'description'=>$description, 'items'=>$items, 'stats'=>$stats));
     }
 
 }
