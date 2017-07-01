@@ -2,46 +2,15 @@
 {% block body %}
 	<div class="pageCharacter">
 		<section class="mainInfoPerso">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-			        <div class="col-sm-3">
-				        <table>
-				        	<thead>
-				        		<tr>
-				        			<td id="icoTank"></td>
-				        			<td><b>Stuff</b></td>
-				        		</tr>
-				        	</thead>
-				        </table>
+			        
+			        <div class="col-sm-12" id="mainPhoto">
+
+					    <img src="{{description['thumbnail']}}"/>
+
 			        </div>
-			        <div class="col-sm-9">
-				        <table>
-				        	<thead>
-				        		<tr>
-				        			<td id="icoHeal"></td>
-				        			<td>
-					        			<!-- {% for character in characters %}
-			        						{% if character['name'] == DioX %}
-							        			<div>							
-												<img src="{{ path('KWT_character',{'character': character['thumbnail'] }) }}"></img>
-							        			</div>
-							        		{% endif %}		
-										{% endfor %} -->
-									</td>
-				        		</tr>
-				        	</thead>
-				        </table>
-			        </div>
-			        <div class="col-sm-3">
-				        <table>
-				        	<thead>
-				        		<tr>
-				        			<td id="icoDPS"></td>
-				        			<td><b>Stuff</b></td>
-				        		</tr>
-				        	</thead>
-				        </table>
-			        </div>
+
 			    </div>
 			</div>
 		</section>
