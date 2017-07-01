@@ -48,7 +48,7 @@ class KWTController extends Controller
     		'class' => $response->class, 
     		'gender' => $response->gender,
     		'level' => $response->level,
-    		'thumbnail' => $response->thumbnail,
+    		'thumbnail' => str_replace("avatar" , "main" , "https://render-eu.worldofwarcraft.com/character/".$response->thumbnail),
     		'ilvl' => $response->items->averageItemLevelEquipped,
     		);
 		$items = array(
@@ -76,10 +76,10 @@ class KWTController extends Controller
     		'str' => $response->stats->str,
     		'agi' => $response->stats->agi,
     		'int' => $response->stats->int,
-    		'crit' => $response->stats->crit,
-    		'haste' => $response->stats->haste,
-    		'mastery' => $response->stats->mastery,
-    		'versatility' => $response->stats->versatilityDamageDoneBonus
+    		'crit' => round($response->stats->crit,1),
+    		'haste' => round($response->stats->haste,1),
+    		'mastery' => round($response->stats->mastery,1),
+    		'versatility' => round($response->stats->versatilityDamageDoneBonus,1)
     		);
 
 		var_dump($description);
