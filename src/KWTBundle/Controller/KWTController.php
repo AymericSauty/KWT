@@ -85,7 +85,7 @@ class KWTController extends Controller
 		var_dump($description);
     	var_dump($items);
     	var_dump($stats);
-        return $this->render('KWTBundle:Site:character.html.twig',array ('active'=>$active));
+        return $this->render('KWTBundle:Site:character.html.twig',array ('active'=>$active, 'description'=>$description, 'items'=>$items, 'stats'=>$stats));
     }
 
 }
