@@ -72,8 +72,8 @@
 			        					<li><b>Chevaliers de la mort</b></li>
 			        					{% for character in characters %}
 			        						{% if character['class'] == 6 %}
-							        			<div>
-							        				{{character['name']}}
+							        			<div>							
+												<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -88,7 +88,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 11 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -103,7 +103,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 10 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -118,7 +118,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 3 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -133,7 +133,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 8 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -148,7 +148,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 12 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -168,7 +168,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 2 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -183,7 +183,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 5 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -198,7 +198,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 4 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -213,7 +213,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 7 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -228,7 +228,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 1 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}
@@ -243,7 +243,7 @@
 			        					{% for character in characters %}
 			        						{% if character['class'] == 9 %}
 							        			<div>
-							        				{{character['name']}}
+							        				<a href="{{ path('KWT_character',{'character': character['name'] }) }}">{{character['name']}}</a>
 							        			</div>
 							        		{% endif %}		
 										{% endfor %}

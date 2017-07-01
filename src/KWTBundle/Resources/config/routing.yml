@@ -5,3 +5,7 @@ KWT_index:
 KWT_membre:
     path:     /membre
     defaults: { _controller: KWTBundle:KWT:membre }
+
+KWT_character:
+    path:     /membre/{character}
+    defaults: { _controller: KWTBundle:KWT:character }
