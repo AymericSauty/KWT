@@ -19,7 +19,15 @@
 				        	<thead>
 				        		<tr>
 				        			<td id="icoHeal"></td>
-				        			<td><b>Heal</b></td>
+				        			<td>
+					        			<!-- {% for character in characters %}
+			        						{% if character['name'] == DioX %}
+							        			<div>							
+												<img src="{{ path('KWT_character',{'character': character['thumbnail'] }) }}"></img>
+							        			</div>
+							        		{% endif %}		
+										{% endfor %} -->
+									</td>
 				        		</tr>
 				        	</thead>
 				        </table>
