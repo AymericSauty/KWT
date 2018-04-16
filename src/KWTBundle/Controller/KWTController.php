@@ -15,6 +15,12 @@ class KWTController extends Controller
         return $this->render('KWTBundle:Site:index.html.twig',array ('active'=>$active));
     }
 
+    public function TPAction()
+    {
+        $active = "TP";
+        return $this->render('KWTBundle:Site:tp.html.twig',array ('active'=>$active));
+    }
+
     public function membreAction()
     {
     	$active = "Membres";

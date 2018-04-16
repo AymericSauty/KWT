@@ -33,6 +33,7 @@
         <div id="listView" class="list">
           <li {% if active == "Accueil" %}class="list-item-active"{% else %}class="list-item"{% endif %} ><a href="{{ path('KWT_index') }}">Accueil</a></li>
           <li {% if active == "Membres" %}class="list-item-active"{% else %}class="list-item"{% endif %}><a href ="{{ path('KWT_membre') }}">Membres</a></li>
+          <li {% if active == "TP" %}class="list-item-active"{% else %}class="list-item"{% endif %}><a href ="{{ path('KWT_TP') }}">TP WAMP</a></li>
           <li class="list-item"><a href="#">Progress</a></li>
           <li class="list-item"><a href="#">Recrutement</a></li>
           <li class="list-item"><a href="#">Teamspeak</a></li>

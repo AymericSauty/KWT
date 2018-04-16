@@ -16,7 +16,12 @@
 			        </div>
 
 			        <div class="col-sm-6" id="mainPhoto">
-
+				        <span>coucou</span>
+				        {% for item in description %}
+			        			<div>							
+								<a href="">{{item['thumbnail']}}</a>
+			        			</div>
+						{% endfor %}
 			        </div>
 
 			        <div class="col-sm-3">

@@ -9,3 +9,7 @@ KWT_membre:
 KWT_character:
     path:     /membre/{character}
     defaults: { _controller: KWTBundle:KWT:character }
+
+KWT_TP:
+    path:     /TP
+    defaults: { _controller: KWTBundle:KWT:TP }

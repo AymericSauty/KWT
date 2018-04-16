@@ -1,0 +1,25 @@
+{% extends "::layout.html.twig" %}
+{% block body %}
+
+<section class="presentation">
+	<div>
+		<h1>Nouvelle page de TP</h1>
+		<div class="container">
+			<div class="row">
+	            <div class="col-sm-12">
+	            	<form>
+					  <div class="form-group">
+					    <label for="InputName">Email address</label>
+					    <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Entrer un nom">
+					    <small id="nameHelp" class="form-text text-muted">Vous pouvez rentrer ce que vous voulez.</small>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Envoyer</button>
+					</form>
+	           	</div>
+	        </div>
+		</div>
+		
+	</div>
+</section>
+	
+{% endblock %}
